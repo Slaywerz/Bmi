@@ -1,17 +1,17 @@
 public class BmiService {
     public double calculate(double weight, double growth) {
-        double Bmi;
+        double bmi;
         boolean m = 2.72 < growth;
 
         if (m) {
-            double CmToM = growth / 100;
-            Bmi = weight / (CmToM * CmToM);
+            double cmToM = growth / 100;
+            bmi = weight / (cmToM * cmToM);
 
         } else {
-            Bmi = weight/ (growth * growth);
+            bmi = weight/ (growth * growth);
         }
 
-        return Bmi;
+        return bmi;
     }
 
 }

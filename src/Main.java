@@ -12,7 +12,7 @@ public class Main {
         System.out.print("Пожалуйста, введите ваш рост: ");
         double growth = in.nextDouble();
 
-        double BMI = service.calculate(weight, growth);
-        System.out.printf("%.2f", BMI);
+        double bmi = service.calculate(weight, growth);
+        System.out.printf("%.2f", bmi);
     }
 }
